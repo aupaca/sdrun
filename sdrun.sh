@@ -1,14 +1,16 @@
 #!/bin/bash
 
+ARGC=$#
+
 main() {
-	if [ $# -ne 1 ]; then
+	if [ $ARGC -eq 0 ]; then
 		return 1
 	fi
 	src=$(pwd)/$1
 	dest=~/a.out
 	mv "$src" "$dest"
 	chmod +x "$dest"
-	$dest
+	$dest "${@:2}"
 	local status=$?
 	mv "$dest" "$src"
 	return $status
