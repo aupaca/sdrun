@@ -1,1 +1,4 @@
-usage: ./sdrun <program_path> [arg1, arg2, ...]
+## Usage
+
+```bash
+sdrun <path/to/bin> [arg1, arg2, ..., argn]
