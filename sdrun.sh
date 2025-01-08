@@ -5,7 +5,7 @@ TEMP_BIN_FILE=~/a.out
 
 main() {
 	if [ $# -eq 0 ]; then
-		echo "sdrun <path/to/binary> [arg1, arg2, ..., argn]"
+		echo "sdrun <path/to/binary> [arg1] [arg2] ... [argn]"
 		return 1
 	fi
 	if [ ! -f $BIN_FILE ]; then
