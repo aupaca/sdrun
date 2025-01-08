@@ -1,7 +1,7 @@
 ## Usage
 
 ```bash
-sdrun <path/to/binary> [arg1, arg2, ..., argn]
+sdrun <path/to/binary> [arg1] [arg2] ... [argn]
 ```
 
 ## Installation
